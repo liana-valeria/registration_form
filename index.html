@@ -21,8 +21,18 @@
 
         <label for="password">Create a New Password: <input id="password" type="password" required minlength="8"> </input></label>
       </fieldset>
+
+      <fieldset>
+        <!--asks for type of account-->
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" checked> Personal</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type"> Business</label>
+        <legend>Account type (required)</legend>
+      </fieldset>
+      
       <fieldset></fieldset>
-      <fieldset></fieldset>
+      <label for="terms-and-conditions">
+        <input id="terms-and-conditions" type="checkbox" required /> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+      </label>
       <input id="submit" type="submit" value="Submit"> </input>
       </form>
   </body>
